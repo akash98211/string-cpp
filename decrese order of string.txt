@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+  using namespace std;
+ 
+void decrease(string& str)                      //function yeha pe aaya , yaad rakhna & sigh used hota hai
+{
+    int freq[26]={0};                                // create kiya count kar k ley kitna baar character aata hai
+    for (int i = 0; i < str.length(); i++) {     // for  star from string start to end of string  
+        freq[str[i]-97]++;                       // 
+    }
+    for (int i =25; i> 0; i--) {      
+        /* code */
+        for (int j = 0; j <freq[i]; j++) {
+            /* code */
+            cout<<(char)('a'+i);          //print karega actuall chachter
+        }
+    }
+}
+  int main()
+  {int t=1;//cin>>t;
+  while(t--)
+  {
+      string s="akash";
+      //cin>>s;          //input of string " akash"
+      decrease(s);      //funtion ko call kiya
+  }
+    
+    return 0;
+  }

@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+#include<string.h>
+  using namespace std;
+  
+  int main()
+  {
+    int t;cin>>t;
+    while(t--)
+    { int n;cin>>n;
+      string str;
+      cin>>str;
+     
+      int a=0,d=0;
+      
+      for (int i = 0; i < n; i++) 
+      
+       { if(str[i]=='A')
+         a++;
+         else if (str[i]=='D')
+         d++;
+        
+       }
+      
+      if(a>d)
+      cout<<"Aditya\n";
+      else if(d>a)
+      cout<<"Danish\n";
+      else
+      cout<<"AdiDan\n";
+    }
+    return 0;
+  }
